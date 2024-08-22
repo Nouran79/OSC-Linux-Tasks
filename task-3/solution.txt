@@ -31,13 +31,13 @@ cd project_files
 ls
 nano link_data.csv
 cat ~/project_files/data/data.csv
-unlink link_data.csv
+unlink link_daclearta.csv
 touch summary.txt
 echo "Summary Start" >> summary.txt
 cat summary.txt
-wc -l  summary.txt | tee >>  summary.txt
+date >> summatry.txt
+wc -l  ~/project_files/summary.txt | tee >>  summary.txt
 wc -w ~/project_files/reports/report1.md
-wc -c ~/project_files/logs/system.log
-ls | wc -l
+wc -c ~/project_files/logs/system.log | tee >> summary.txt
 ls | wc -l | tee >> summary.txt
 cat summary.txt
