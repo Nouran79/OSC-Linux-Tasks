@@ -1,0 +1,2 @@
+cut -d "," -f 2 info.csv | sort | uniq | tee >> emails.txt
+ps  jax  --sort=cmd | tr -s ' ' | cut -d ' ' -f 3,11 | tee > processes.txt
